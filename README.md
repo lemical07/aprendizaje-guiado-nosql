@@ -59,14 +59,12 @@ Proyecto educativo que demuestra la importación y gestión de datos en PostgreS
 
 **Precondiciones**:
 - Tabla `categorias` debe existir (ejecutar Paso 1 primero)
-- El archivo `import/categorias.json` debe estar accesible en la ruta `/home/camper/Música/HNK/psql/no-sql/`
-- Si la ruta es diferente, ajustarla en el script antes de ejecutar
+- El archivo `import/categorias.json` debe estar en la carpeta `import/` del proyecto
 
 **Instrucciones**:
-1. Verificar que el archivo JSON existe en la ruta especificada
-2. Si la ruta es diferente en tu sistema, editar el script y reemplazar la ruta
-3. Ejecutar el archivo con tu herramienta de consultas
-4. Verificar que aparezca un SELECT mostrando las 4 categorías insertadas
+1. Verificar que el archivo `import/categorias.json` existe en el proyecto
+2. Ejecutar el archivo con tu herramienta de consultas
+3. Verificar que aparezca un SELECT mostrando las 4 categorías insertadas
 
 ---
 
@@ -87,14 +85,12 @@ Proyecto educativo que demuestra la importación y gestión de datos en PostgreS
 **Precondiciones**:
 - Tabla `juegos` debe existir (ejecutar Paso 1 primero)
 - Tabla `categorias` debe tener datos (ejecutar Paso 2 primero)
-- El archivo `import/juegos.xml` debe estar accesible en la ruta `/home/camper/Música/HNK/psql/no-sql/`
-- Si la ruta es diferente, ajustarla en el script antes de ejecutar
+- El archivo `import/juegos.xml` debe estar en la carpeta `import/` del proyecto
 
 **Instrucciones**:
-1. Verificar que el archivo XML existe en la ruta especificada
-2. Si la ruta es diferente en tu sistema, editar el script y reemplazar la ruta
-3. Ejecutar el archivo con tu herramienta de consultas
-4. Verificar que aparezca el conteo de juegos y un preview de los primeros 5 registros
+1. Verificar que el archivo `import/juegos.xml` existe en el proyecto
+2. Ejecutar el archivo con tu herramienta de consultas
+3. Verificar que aparezca el conteo de juegos y un preview de los primeros 5 registros
 
 ---
 

@@ -1,6 +1,6 @@
 CREATE TABLE temporal_json(data JSONB);
 
-\copy temporal_json(data) FROM PROGRAM 'tr -d "\r\n" < /home/camper/Música/HNK/psql/no-sql/categorias.json'
+\copy temporal_json(data) FROM PROGRAM 'tr -d "\r\n" < ./import/categorias.json'
 
 INSERT INTO categorias (codigo, nombre, descripcion)
 SELECT
