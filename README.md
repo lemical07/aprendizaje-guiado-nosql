@@ -51,7 +51,7 @@ Proyecto educativo que demuestra la importación y gestión de datos en PostgreS
 
 **Qué hace**:
 1. Crea una tabla temporal para cargar datos JSON
-2. Lee el archivo `import/categorias.json` desde la ruta especificada
+2. Lee el archivo `import/categorias.json`
 3. Extrae cada categoría del array JSON
 4. Inserta los datos en la tabla `categorias`
 5. Muestra las categorías cargadas
@@ -75,7 +75,7 @@ Proyecto educativo que demuestra la importación y gestión de datos en PostgreS
 
 **Qué hace**:
 1. Crea una tabla temporal para cargar datos XML
-2. Lee el archivo `import/juegos.xml` desde la ruta especificada
+2. Lee el archivo `import/juegos.xml`
 3. Parsea la estructura XML y extrae cada juego
 4. Mapea los campos XML a las columnas de la tabla `juegos`
 5. Inserta los datos manteniendo la relación con categorías
@@ -129,6 +129,25 @@ Proyecto educativo que demuestra la importación y gestión de datos en PostgreS
 **Instrucciones**:
 1. Ejecutar el archivo con tu herramienta de consultas
 2. Revisar qué juegos tienen precio arriba del promedio
+
+---
+
+### Paso 6: Consultar Juegos Agrupados por Categoría (DQL)
+**Archivo**: `script/dql/games_by_category.sql`
+
+**Propósito**: Ver todos los juegos agrupados y organizados por categoría.
+
+**Qué hace**:
+- Realiza un INNER JOIN entre las tablas `juegos` y `categorias`
+- Muestra: título del juego, nombre de la categoría y precio
+- Ordena los resultados por categoría y luego por título
+
+**Precondiciones**:
+- Pasos 1, 2 y 3 deben estar completados
+
+**Instrucciones**:
+1. Ejecutar el archivo con tu herramienta de consultas
+2. Revisar los juegos organizados por su categoría correspondiente
 
 ---
 
