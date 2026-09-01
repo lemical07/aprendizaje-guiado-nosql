@@ -1,7 +1,7 @@
--- Inserción de archivos binarios (BYTEA)
+-- Listado de juegos agrupados e integrados con su categoría
 
-INSERT INTO images(nombre, archivo)
-SELECT 'imagen.jpg', pg_read_binary_file('/home/camper/postgresdata/image.jpg');
-
-SELECT nombre, octet_length(archivo) AS BINARY
-FROM images;
+SELECT j.titulo, c.nombre AS categoria, j.precio
+FROM juegos AS j
+INNER JOIN categorias c
+    ON c.categoria_id = j.categoria_id
+ORDER BY c.nombre, j.titulo;
